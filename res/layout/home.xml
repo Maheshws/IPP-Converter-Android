@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:padding="@dimen/padding_medium"
+        android:text="Select an Operation"
+        tools:context=".Home" />
+
+    <Button
+        android:id="@+id/IPPHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome"
+        android:layout_centerHorizontal="true"
+        android:text="Infix to Prefix/Postfix Conversion" />
+
+    <Button
+        android:id="@+id/PIPHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IPPHome"
+        android:layout_alignRight="@+id/IPPHome"
+        android:layout_below="@+id/IPPHome"
+        android:text="Prefix to Infix/Postfix Conversion" />
+
+    <Button
+        android:id="@+id/PPIHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PIPHome"
+        android:layout_alignRight="@+id/PIPHome"
+        android:layout_below="@+id/PIPHome"
+        android:text="Postfix to Prefix/Infix Conversion" />
+
+    <Button
+        android:id="@+id/EvaluateHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PPIHome"
+        android:layout_alignRight="@+id/PPIHome"
+        android:layout_below="@+id/PPIHome"
+        android:text="Postfix Evaluation" />
+
+</RelativeLayout>

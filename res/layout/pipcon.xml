@@ -1,0 +1,68 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tEnterExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="@dimen/padding_medium"
+        android:text="Enter Prefix Expression"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/Exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tEnterExp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text|numberSigned" >
+
+        <requestFocus />
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tResType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Exp"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_medium"
+        android:text="Select a Conversion" />
+
+    <TextView
+        android:id="@+id/tRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tResType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:hint="RESULT"
+        android:padding="@dimen/padding_small" />
+
+    <Button
+        android:id="@+id/Pre2In"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Pre2Post"
+        android:layout_alignRight="@+id/Pre2Post"
+        android:layout_below="@+id/tRes"
+        android:layout_marginTop="26dp"
+        android:text="Convert Prefix to Infix" />
+
+    <Button
+        android:id="@+id/Pre2Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pre2In"
+        android:layout_centerHorizontal="true"
+        android:text="Convert Prefix to Postfix" />
+
+</RelativeLayout>
