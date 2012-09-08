@@ -23,6 +23,7 @@
         <activity android:name="IPPConverter" android:label="Infix to Prefix/Postfix"></activity>
         <activity android:name="PIPConverter" android:label="Prefix to Postfix/Infix"></activity>
         <activity android:name="PPIConverter" android:label="Postfix to Prefix/Infix"></activity>
+        <activity android:label="Error" android:name="Error" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"></activity>
     </application>
 
 </manifest>
